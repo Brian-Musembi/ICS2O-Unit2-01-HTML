@@ -10,8 +10,17 @@
     <p>Sample Text before the Script</p>
       <script>
         alert( 'Hello, World!' );
+        var txt = "Rick And Morty!";
+        document.write("<p>Picture Below: " + txt.fontcolor("green") + "</p>");
       </script>
     <p>Sample text after the Script</p>
+    <button type="button" id="mybtn" onclick="myFunction()">Set left position to 100 px</button>
+
+      <script>
+        function myFunction() {
+        document.getElementById("mybtn").style.left = "267px";
+        }
+      </script>
     <img src="./images/rickandmorty.jpg" alt="rickandmorty.jpg" width="670" height="335">
   </body>
 </html>
